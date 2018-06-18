@@ -14,9 +14,9 @@ public class UserController {
 	IUserService userService;
 	
 	
-	@RequestMapping(value = "/ac", method = RequestMethod.GET)
-	public String checkLogin() {
-		return "index";
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String test() {
+		return "login";
 	}
 	
 }

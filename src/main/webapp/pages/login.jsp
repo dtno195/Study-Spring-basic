@@ -21,24 +21,24 @@
   <title>Login Page </title>
 
   <!-- Favicons-->
-  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="<c:url value="/images/favicon/favicon-32x32.png"/>" sizes="32x32">
   <!-- Favicons-->
-  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon-precomposed" href="<c:url value="/images/favicon/apple-touch-icon-152x152.png"/>">
   <!-- For iPhone -->
   <meta name="msapplication-TileColor" content="#00bcd4">
-  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="<c:url value="/images/favicon/mstile-144x144.png"/>images/favicon/mstile-144x144.png">
   <!-- For Windows Phone -->
 
 
-  <!-- CORE CSS-->
+  <!-- CORE CSS <c:url value="/js/plugins/perfect-scrollbar/perfect-scrollbar.css"/>   -->
   
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="<c:url value="/css/materialize.css"/>" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="<c:url value="/css/style.css"/>" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="<c:url value="/css/page-center.css"/>" type="text/css" rel="stylesheet" media="screen,projection">
 
   <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-  <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="<c:url value="/css/prism.css"/>" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="<c:url value="/js/plugins/perfect-scrollbar/perfect-scrollbar.css"/>" type="text/css" rel="stylesheet" media="screen,projection">
   
 </head>
 
@@ -58,8 +58,8 @@
       <form class="login-form">
         <div class="row">
           <div class="input-field col s12 center">
-            <img src="images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
-            <p class="center login-form-text">Material Design Admin Template</p>
+            <img src="<c:url value="/images/login-logo.png"/>" alt="" class="circle responsive-img valign profile-image-login">
+            <p class="center login-form-text" style="font-size: 20px">Login !</p>
           </div>
         </div>
         <div class="row margin">
@@ -76,25 +76,25 @@
             <label for="password">Password</label>
           </div>
         </div>
-        <div class="row">          
+        <!-- <div class="row">          
           <div class="input-field col s12 m12 l12  login-text">
               <input type="checkbox" id="remember-me" />
               <label for="remember-me">Remember me</label>
           </div>
-        </div>
+        </div> -->
         <div class="row">
           <div class="input-field col s12">
             <a href="index.html" class="btn waves-effect waves-light col s12">Login</a>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="input-field col s6 m6 l6">
             <p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
           </div>
           <div class="input-field col s6 m6 l6">
               <p class="margin right-align medium-small"><a href="page-forgot-password.html">Forgot password ?</a></p>
           </div>          
-        </div>
+        </div> -->
 
       </form>
     </div>
@@ -106,17 +106,17 @@
     Scripts
     ================================================ -->
 
-  <!-- jQuery Library -->
-  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <!-- jQuery Library <c:url value="/js/plugins.js"/> -->
+  <script type="text/javascript" src="<c:url value="/js/jquery-1.11.2.min.js"/>"></script>
   <!--materialize js-->
-  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="<c:url value="/js/materialize.js"/>"></script>
   <!--prism-->
-  <script type="text/javascript" src="js/prism.js"></script>
+  <script type="text/javascript" src="<c:url value="/js/prism.js"/>"></script>
   <!--scrollbar-->
-  <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script type="text/javascript" src="<c:url value="/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"/>"></script>
 
   <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="<c:url value="/js/plugins.js"/>"></script>
 
 </body>
 

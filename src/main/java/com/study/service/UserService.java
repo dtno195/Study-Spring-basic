@@ -16,49 +16,48 @@ public class UserService implements IUserService {
 	@Autowired
 	IUserDAO userDAO;
 
-	@Override
+
 	public List<UserBO> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+
 	public List<UserBO> search(UserBO user, Integer page) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+
 	public UserBO getUserById(UserBO user) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+
 	public UserBO getUserByUserName(UserBO user) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+
 	public void insert(UserBO user) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
 	public void delete(UserBO user) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+
 	public void update(UserBO user) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+
 	public UserBO checkLogin(UserBO userBO) {
 
 		return userDAO.checkLogin(userBO);

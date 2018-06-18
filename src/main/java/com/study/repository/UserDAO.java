@@ -18,55 +18,52 @@ public class UserDAO implements IUserDAO {
 		return sessionFactory.getCurrentSession();
 	}
 
-	@Override
 	public UserBO loadUserByUsername(String username) {
 		return (UserBO) getSession().createQuery("SELECT o FROM UserBO o WHERE o.username=:username")
 				.setParameter("username", username).uniqueResult();
 	}
 
-	@Override
 	public List<UserBO> getAll() {
 		String hql = "FROM UserBO u ";
 		return getSession().createQuery(hql).list();
 	}
 
-	@Override
+
 	public List<UserBO> search(UserBO userBO, Integer page) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public UserBO getUserById(UserBO userBO) {
 		return (UserBO) getSession().createQuery("SELECT u FROM UserBO u WHERE u.userId = :id")
 				.setParameter("id", userBO.getUserId()).uniqueResult();
 	}
 
-	@Override
+
 	public UserBO getUserByUserName(UserBO userBO) {
 		return (UserBO) getSession().createQuery("SELECT u FROM UserBO u WHERE u.username=:username")
 				.setParameter("username", userBO.getUsername()).uniqueResult();
 	}
 
-	@Override
+
 	public void insert(UserBO userBO) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+
 	public void update(UserBO userBO) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+
 	public void delete(UserBO userBO) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+
 	public UserBO checkLogin(UserBO userBO) {
 		return (UserBO) getSession()
 				.createQuery("SELECT u FROM UserBO u WHERE u.username=:username,u.password=:password")
