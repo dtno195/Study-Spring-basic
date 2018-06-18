@@ -18,7 +18,6 @@
 	<context:component-scan base-package="com.study.config" />
 	<context:component-scan base-package="com.study.entities" />
 	<context:component-scan base-package="com.study.repository" />
-	<context:component-scan base-package="com.study.dao" />
 	<context:component-scan base-package="com.study.service" />
 	<context:component-scan base-package="com.study.controller" />
 	
@@ -34,8 +33,10 @@
 	</bean>
 	 <mvc:resources location="/resources/" mapping="/resources/**" />
 	<!-- Initialization for data source -->
-	<mvc:resources location="/build/" mapping="/build/**" />
-	<mvc:resources location="/vendors/" mapping="/vendors/**" />
+	<mvc:resources location="/css/" mapping="/css/**" />
+	<mvc:resources location="/js/" mapping="/js/**" />
+	<mvc:resources location="/font/" mapping="/font/**" />
+	
 	<mvc:annotation-driven />
 	 <bean id="multipartResolver"
         class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -52,7 +53,7 @@
     <property name="defaultEncoding" value="UTF-8" />
   </bean>
   <!-- Định nghĩa  -->
-<!--   <bean id="localeResolver" nếu dùng session thay thế ở dưới.
+	<!--   <bean id="localeResolver" nếu dùng session thay thế ở dưới.
     class="org.springframework.web.servlet.i18n.SessionLocaleResolver"> -->
     
   	<bean id="localeResolver" 
